@@ -1,24 +1,24 @@
 import "../styles/home.css";
-
-import logo from "../assets/notify.png";
+import { Link, useLocation } from "react-router-dom";
+import logo from "../assets/image.png";
 import img from "../assets/Gemini_Generated_Image_uzdpvjuzdpvjuzdp.png";
 import { CirclePlay, CalendarCheck2, BarChart3, Users } from "lucide-react";
 import { useState } from "react";
 const grid = [
   {
    icon: <CalendarCheck2 size={30} color="blue" />,
-    heading:"Smart Scheduling",
-    content:"Our intelligent engine predicts task durations and automatically optimizes your team's weekly calendar for maximum output."
+    heading:"Smart Notifications",
+    content:"Receive reminders exactly at the scheduled time so you never miss important tasks."
   },
 {
   icon:<  BarChart3 color="purple" size={30}/>,
-  heading:"Progress Tracking",
-content:"Visualize milestones with elegant tonal progress bars and real-time activity feeds that keep everyone aligned."
+  heading:"Conflict Detection",
+content:"Get alerts when multiple tasks are scheduled at the same time and organize them by priority."
 },
 {
   icon:<Users color="blue" size={30}/>,
-  heading:"Team Collaboration",
-content:"Seamless hand-offs and communication channels integrated directly into your workspace to eliminate context switching."
+  heading:"Daily Overview",
+content:"View all your upcoming and completed tasks in one clean and organized dashboard."
 }];
 
 export default function Home() {
@@ -26,10 +26,9 @@ export default function Home() {
     <>
       <div className="landing-page">
         <h1 className="top-text">STREAMLINE YOUR DAY</h1>
-        <h1 className="sub-text">Master Your Workflow</h1>
+        <h1 className="sub-text">Never Miss Important Tasks</h1>
         <p className="home-copy">
-          A simple, powerful project scheduler designed for focus. Reclaim your
-          time and achieve momentum without the visual noise.
+          A smart reminder app that helps you remember tasks, meetings, medicines, birthdays, and daily routines — right on time.
         </p>
       </div>
       <div className="home-button">
@@ -41,7 +40,7 @@ export default function Home() {
         </button>
       </div>
       <div className="img">
-        <img src={logo} alt="img" className="centered-image" />
+        <img src={logo} alt="image" className="centered-image" />
       </div>
       <h1
         style={{
@@ -82,7 +81,7 @@ export default function Home() {
 +1.2k teams joined this month</p>
       </div>
       <div className="girl">
-        <img src={img} className="image" alt/>
+        <img src={img} className="image" alt="image"/>
       </div>
       </div>
     </>

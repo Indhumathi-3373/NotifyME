@@ -30,7 +30,7 @@ body{
     margin: 0;
     font-family: sans-serif;
     letter-spacing: 0.05em;
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 1.02;
     font-weight: 550;
     color: #0f172a;
@@ -79,7 +79,7 @@ transform: scale(1.02);
   display: block;
   margin: 0 auto;
   border: 1px solid #ffffff;
-  max-width: 80%;
+  width: min(1150px, 90%);
   height: auto;
   border-radius: 16px;
 }

@@ -1,28 +1,36 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Search , Bell, Settings} from "lucide-react";
 import "../styles/navbar.css"; 
+
 export default function Navbar() {
+  const location = useLocation();
+  const isCreateTaskPage = location.pathname !== "/create_task";
+
   return (
     <header className="navbar">
       <h1>NotifyMe</h1>
       <nav className="center">
         <ul>
           <li><Link to="/dashboard">Dashboard</Link></li>
-          <li><Link to="/schedule">Schedule</Link></li>
-          <li><Link to="/teams">Teams</Link></li>
-          <li><Link to="/reports">Reports</Link></li>
+          <li><Link to="/schedule">Current Tasks</Link></li>
+          <li><Link to="/teams">Features</Link></li>
+          <li><Link to="/reports">Contact</Link></li>
         </ul>
       </nav>
       <nav className="corner">
         <ul>
-            <li className="search-box">
+            {isCreateTaskPage && (
+              <li className="search-box">
                 <Search size={15} color="grey" className="search-icon"/>
-                <input className="search-bar" type="text" placeholder="search projects..."/>
-            </li>
-            <li><Link className="create-project-btn" to="/signup">Create Projects</Link></li>
+                <input className="search-bar" type="text" placeholder="search Tasks..."/>
+              </li>
+            )}
+            {isCreateTaskPage && (
+              <li><Link className="create-project-btn" to="/create_task">Create Tasks</Link></li>
+            )}
             <li>
-                <Bell size={23}className="bell"/>
-            </li><li className="settings-item"><Settings size={23} className="settings"/></li>
+                <Link className="create-project-btn" to="/">Login</Link> 
+            </li>
 
         </ul>
       </nav>

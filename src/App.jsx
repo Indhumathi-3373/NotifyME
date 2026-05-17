@@ -1,11 +1,23 @@
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
+
 import Endnavbar from './components/endNav'
-import Landinpage from './components/home'
+import Home from './components/home'
 import Navbar from './components/navbar'
+import Create_task from './components/create_task'
+
 function App() {
   return <>
-  <Navbar/>
-  <Landinpage/>
-  <Endnavbar/>
+
+    <Routes>
+      <Route path="/" element={<>
+        <Navbar/>
+        <Home/>
+        <Endnavbar/>
+       </> }/>
+      <Route path="/create_task" element={<Create_task/>}/>
+    </Routes>
+  
+
   </>
   
 }

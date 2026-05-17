@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { useLocation,Link } from 'react-router-dom';
 import { Globe, Share2 } from 'lucide-react';
 import '../styles/endnav.css';
 
@@ -7,7 +7,7 @@ export default function Endnavbar() {
     <nav className="endnav">
       <ul className="text">
         <li className="brand">ProjectFlow</li>
-        <li className="copyright">© 2024 Project Time Scheduler. All rights reserved.</li>
+        <li className="copyright">ï¿½ 2024 Project Time Scheduler. All rights reserved.</li>
       </ul>
 
       <ul className="endnavcenter">
