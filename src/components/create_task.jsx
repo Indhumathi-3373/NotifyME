@@ -1,6 +1,6 @@
 import "../styles/createtask.css";
 import Navbar from "./navbar";
-
+import Endnav from "./endNav";
 export default function create_task() {
   return (
     <div>
@@ -65,6 +65,10 @@ export default function create_task() {
           </div>
         </div>
       </div>
+      <div style={{marginTop:"35%"}}>
+<Endnav />
+      </div>
+      
     </div>
   );
 }
