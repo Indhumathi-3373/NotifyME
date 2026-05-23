@@ -1,0 +1,78 @@
+.body-ct{
+  height:100vh;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 2%;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.create_box {
+
+  margin-top: 16px;
+  margin-left: 23%;
+  margin-right: 23%;
+  display: flex;
+  padding-bottom: 40px;
+}
+.box-styling{
+  display: flex;
+  flex-direction: column;
+  background: white;
+  flex: 1; gap: 20px;
+  min-width: 320px;
+  padding: 32px;
+  border: 1px solid #d5def3;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(22, 34, 62, 0.06);
+}
+.box-styling .p{
+  flex-direction: row;
+}
+.inputs-createtask{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.createtask-input{
+  padding:12px 20px ;
+  width: 47%;
+  border:1px solid #d5def3;
+  background-color: #ecf6ff;
+  border-radius: 5px;
+}
+.createtask-input:focus{
+  outline:none;
+ border-color: #2563eb;
+}
+.textarea-ct{
+  background-color: #ecf6ff;
+  padding-bottom: 15%;
+  width:100%;
+  border: 1x solid #d5def3;
+}
+.textarea-ct:focus{
+outline:none;
+ border-color: #2563eb;
+}
+.buttons-createtask{
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+
+}
+.create-taskbtn{
+  display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    color: #fff;
+    padding: 9px 11px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: transform 0.2s ease, filter 0.2s ease;
+    border: none;
+}
