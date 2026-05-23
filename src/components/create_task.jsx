@@ -25,66 +25,37 @@ export default function create_task() {
 
         <div className="create_box">
           <div className="box-styling">
-            <p
-              style={{
-                color: " rgb(78, 78, 245)",
-                textTransform: "uppercase",
-                fontFamily: "sans-serif",
-                fontWidth: "normal",
-              }}
-            >
-              Reminder Title
-            </p>
-            <p    style={{
-                color: " rgb(78, 78, 245)",
-                textTransform: "uppercase",
-                fontFamily: "sans-serif",
-                fontWidth: "normal",
-              }}
-              >Priority</p>
             <div className="inputs-createtask">
-              <input className="createtask-input" type="text" placeholder="e.g. Morning Workout" />
-
-              <input className="createtask-input" type="text" placeholder="Reminder Category" />
+              <div className="field-group">
+                <p className="field-label">Title</p>
+                <input
+                  className="createtask-input"
+                  type="text"
+                  placeholder="e.g. Morning Workout"
+                />
+              </div>
+              <div className="field-group">
+                <p className="field-label">Reminder</p>
+                <input
+                  className="createtask-input"
+                  type="text"
+                  placeholder="Reminder Category"
+                />
+              </div>
             </div>
 
-            <div>
-              <p
-                style={{
-                  color: " rgb(78, 78, 245)",
-                  textTransform: "uppercase",
-                  fontFamily: "sans-serif",
-                  fontWidth: "normal",
-                }}
-              >
-                Date
-              </p>
-              <p
-                style={{
-                  color: " rgb(78, 78, 245)",
-                  textTransform: "uppercase",
-                  fontFamily: "sans-serif",
-                  fontWidth: "normal",
-                }}
-              >
-                Time
-              </p>
             <div className="inputs-createtask">
-                <input className="createtask-input"type="date" />
+              <div className="field-group">
+                <p className="field-label">Day</p>
+                <input className="createtask-input" type="date" />
+              </div>
+              <div className="field-group">
+                <p className="field-label">Time</p>
                 <input className="createtask-input" type="time" />
+              </div>
             </div>
-        
-            </div>
-            <p
-              style={{
-                color: " rgb(78, 78, 245)",
-                textTransform: "uppercase",
-                fontFamily: "sans-serif",
-                fontWidth: "normal",
-              }}
-            >
-              Description
-            </p>
+
+            <p className="field-label">Description</p>
 
             <input className="textarea-ct" placeholder="Add reminder details..." />
             <div className="buttons-createtask">

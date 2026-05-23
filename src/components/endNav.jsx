@@ -6,7 +6,7 @@ export default function Endnavbar() {
   return (
     <nav className="endnav">
       <ul className="text">
-        <li className="brand">ProjectFlow</li>
+        <li className="brand">NotifyMe</li>
         <li className="copyright">� 2024 Project Time Scheduler. All rights reserved.</li>
       </ul>
 
