@@ -1,21 +1,23 @@
 .body-ct{
-  height:100vh;
+  min-height: calc(100vh - 72px);
+  padding: 16px 0 24px;
 }
 .header {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 2%;
+  margin-top: 0;
   align-items: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 16px;
 }
 .create_box {
 
-  margin-top: 16px;
+  margin-top: 12px;
   margin-left: 23%;
   margin-right: 23%;
   display: flex;
-  padding-bottom: 40px;
+  padding-bottom: 16px;
 }
 .box-styling{
   display: flex;
@@ -51,7 +53,7 @@ justify-content: space-between;
   background-color: #ecf6ff;
   padding-bottom: 15%;
   width:100%;
-  border: 1x solid #d5def3;
+  border: 1px solid #d5def3;
 }
 .textarea-ct:focus{
 outline:none;
@@ -75,4 +77,11 @@ outline:none;
     font-size: 0.9rem;
     transition: transform 0.2s ease, filter 0.2s ease;
     border: none;
+}
+
+@media (max-width: 900px) {
+  .create_box {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
 }
